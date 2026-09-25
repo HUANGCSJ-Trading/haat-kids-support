@@ -14,6 +14,7 @@
       --paper: #fffdf9;
       --peach: #fff0df;
       --coral: #ff8f70;
+      --coral-ink: #ad4e3b;
       --mint: #bfe7d6;
       --lavender: #ded6ff;
       --line: rgba(63, 52, 66, .12);
@@ -31,14 +32,15 @@
       font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     a { color: #8b4d74; }
+    a:focus-visible { outline: 3px solid #8b4d74; outline-offset: 4px; border-radius: 4px; }
     .wrap { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
     header { padding: 32px 0 18px; }
     nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-    .brand { font-weight: 900; letter-spacing: .09em; text-transform: uppercase; color: var(--coral); }
+    .brand { font-weight: 900; letter-spacing: .09em; text-transform: uppercase; color: var(--coral-ink); }
     .navlinks { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; font-weight: 750; }
     .navlinks a { color: var(--ink); text-decoration: none; }
     .hero { padding: 64px 0 52px; text-align: center; }
-    .eyebrow { color: var(--coral); font-weight: 900; letter-spacing: .12em; text-transform: uppercase; font-size: 13px; }
+    .eyebrow { color: var(--coral-ink); font-weight: 900; letter-spacing: .12em; text-transform: uppercase; font-size: 13px; }
     h1 { max-width: 780px; margin: 10px auto 18px; font-size: clamp(40px, 8vw, 74px); line-height: 1.02; letter-spacing: -.045em; }
     .lead { max-width: 720px; margin: 0 auto; color: var(--soft-ink); font-size: clamp(18px, 3vw, 22px); }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding: 16px 0 66px; }
@@ -64,6 +66,9 @@
       .grid { grid-template-columns: 1fr; }
       .navlinks { justify-content: flex-end; }
       .card, section { border-radius: 22px; padding: 24px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
     }
   </style>
 </head>
@@ -97,7 +102,7 @@
         <span class="pill">Daily routines · Growing habits</span>
         <h2>HAAT Kids: Little Steps</h2>
         <p>A cheerful place for children and families to celebrate everyday tasks and build positive routines.</p>
-        <a class="button" href="#little-steps-support">Little Steps support</a>
+        <a class="button" href="#support">Little Steps support</a>
       </article>
     </div>
 
@@ -128,14 +133,15 @@
       <p>Questions about this policy may be sent to <a href="mailto:huangcsj@icloud.com?subject=Piko%20Pet%20Privacy">huangcsj@icloud.com</a>.</p>
     </section>
 
-    <section class="support" id="little-steps-support">
+    <section class="support" id="support">
       <h2>Little Steps Support</h2>
       <p>For help with HAAT Kids: Little Steps, email <a href="mailto:huangcsj@icloud.com?subject=Little%20Steps%20Support">huangcsj@icloud.com</a>. Include the device model, iOS version, and a short description of the issue.</p>
     </section>
 
     <section class="privacy" id="privacy">
       <h2>Little Steps Privacy</h2>
-      <p>Little Steps is designed with children and families in mind. It does not require an account and does not include third-party advertising or cross-app tracking. Routine progress and settings stay on the device.</p>
+      <p>Little Steps is designed with children and families in mind. The app does not collect or transmit personal data, require an account, include advertising, or track users. Routine progress and settings are stored locally on the device and may be included in the device owner’s normal Apple backup.</p>
+      <p>If a parent or guardian contacts support by email, the information they choose to provide is used only to reply and resolve the request. Please do not include a child’s personal information.</p>
       <p>For privacy questions, contact <a href="mailto:huangcsj@icloud.com?subject=Little%20Steps%20Privacy">huangcsj@icloud.com</a>.</p>
     </section>
 
